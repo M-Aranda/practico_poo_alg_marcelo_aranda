@@ -1,11 +1,11 @@
 
-package trabajo_poo_alg_marcelo_aranda;
+package Desafio_profeesque;
 
 import Mensaje_inicial.Mensaje_de_inicio;
 
 import java.util.Scanner;
 
-public class Trabajo_poo_alg_marcelo_aranda {
+public class Desafio_profeesque {
 
 
     public static void main(String[] args) {
@@ -32,14 +32,9 @@ public class Trabajo_poo_alg_marcelo_aranda {
         
         Mensaje_de_inicio mensaje=new Mensaje_de_inicio();
         mensaje.mostrarMensajeDeInicio();
-        
-        String coor_a;
-        String coor_b;
-        String coor_c;
-        
-        Scanner tomar_coor_a= new Scanner(System.in);
-        Scanner tomar_coor_b= new Scanner(System.in);
-        Scanner tomar_coor_c= new Scanner(System.in);
+
+        Scanner input= new Scanner(System.in);
+
         
         
         int x;
@@ -48,7 +43,7 @@ public class Trabajo_poo_alg_marcelo_aranda {
         int contador=0;
         while(true){
             try {
-                String a=tomar_coor_a.nextLine();
+                String a=input.nextLine();
                     String[]valores=a.split(",");
                     String xs=valores[0];
                     String ys=valores[1];
